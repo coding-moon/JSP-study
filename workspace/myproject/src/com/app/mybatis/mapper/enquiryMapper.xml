@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="enquiry">
+	<sql id="searchType">
+		<if test="types != null and keyword != null">
+			where
+			<trim prefixOverrides="or">
+				<foreach item="type" collection="types">
+					<trim prefix="or">
+						<choose>
+							<when test="type == 'noticeTitle'.toString()">
+								notice_title like concat('%', #{keyword}, '%')
+							</when>
+							
+							<!-- <when test="type == 'content'.toString()">
+								board_content like concat('%', #{keyword}, '%')
+							</when>
+							<when test="type == 'writer'.toString()">
+								member_name like concat('%', #{keyword}, '%')
+							</when> -->
+						</choose>
+					</trim>
+				</foreach>
+			</trim>
+		</if>
+	</sql>
+
+
+	<select id="selectAll" resultType="noticeVO" parameterType="map">
+		select notice_id, notice_title, notice_context, notice_date, notice_alter_date
+		from tbl_customer_notice
+		<include refid="searchType"/>
+		order by notice_id desc
+		limit #{startRow}, #{rowCount}
+	</select>
+
+	<insert id="enquiry" parameterType="customerEnquiryVO">
+	insert into tbl_customer_enquiry(user_email, enquiry_title, enquiry_content, user_id)
+	values(#{userEmail}, #{customerEnquiryTitle}, #{customerEnquiryContent}, #{userId})
+	</insert>
+	
+	<select id="getCurrentSequence" resultType="long">
+		select last_insert_id()
+	</select>
+</mapper>

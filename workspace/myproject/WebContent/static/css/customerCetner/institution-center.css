@@ -1,0 +1,260 @@
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+
+.container-divider {
+    border-top: 1px solid #FEEB83;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+@media (min-width: 1160px) {
+    .container {
+        padding: 0;
+        width: 90%;
+    }
+}
+
+.custom-breadcrumbs a:link,
+a:hover,
+a:visited {
+    color: #666666;
+}
+
+.breadcrumbs {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-weight: 400;
+    color: #666666;
+}
+
+.breadcrumbs li {
+    display: inline;
+    font-weight: 400;
+    font-size: 13px;
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
+}
+
+.breadcrumbs li a:visited {
+    color: #666666;
+}
+
+.breadcrumbs li+li::before {
+    content: ">";
+    margin: 0 4px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input[type="search"] {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #666;
+    font-weight: 400;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.search::before {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #777;
+    content: "\1F50D";
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .breadcrumbs {
+        margin: 0;
+    }
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        align-items: baseline;
+        flex-direction: row;
+        margin: 0;
+    }
+}
+
+.page-header h1 {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        margin-bottom: 60px;
+    }
+}
+
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    min-height: 50px;
+    padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .sub-nav {
+        align-items: baseline;
+        flex-direction: row;
+    }
+}
+
+.section-tree .section {
+    flex: initial;
+}
+
+@media (min-width: 768px) {
+    .section-tree .section {
+        flex: 0 0 45%;
+    }
+}
+
+.section-tree {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .section-tree {
+        flex-direction: row;
+    }
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .category-content {
+        flex: 0 0 80%;
+    }
+}
+
+.see-all-sections-trigger {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+.see-all-sections-trigger[aria-hidden="true"] {
+    display: none;
+}
+
+.section-tree-title {
+    margin-bottom: 0;
+}
+
+.section-tree-title a {
+    color: rgba(102, 102, 102, 1);
+}
+
+.article-list-item {
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.icon-star::before {
+    color: #ffd400;
+    font-size: 18px;
+}
+
+.article-list-item a {
+    color: rgba(102, 102, 102, 1);
+}
+
+.section-list {
+    margin: 40px 0;
+}
+
+.section-list-item {
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.section-list-item:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.section-list-item a {
+    align-items: center;
+    color: rgba(102, 102, 102, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before,
+.icon,
+.search::before,
+.recent-activity-item-comment span::before,
+.article-vote::before,
+.attachments .attachment-item::before,
+.share a::before,
+.vote-up::before,
+.vote-down::before,
+.actions .dropdown-toggle::before,
+.collapsible-nav-list li[aria-selected="true"]::after,
+.collapsible-sidebar-title::after,
+.search-result-votes::before,
+.search-result-meta-count::before {
+    font-family: "copenhagen-icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    line-height: 1em;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-star::before {
+    content: "\2605";
+}

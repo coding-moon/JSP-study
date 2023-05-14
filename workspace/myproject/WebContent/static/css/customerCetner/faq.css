@@ -1,0 +1,697 @@
+@charset "UTF-8";
+/** font **/
+@font-face {
+    font-family: 'Metro Sans';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.woff2) format('woff2'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.woff) format('woff'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.otf) format('truetype'), url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.eot),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Black.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Metro Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.woff2) format('woff2'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.woff) format('woff'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.otf) format('truetype'), url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.eot),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Bold.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Metro Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.woff2) format('woff2'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.woff) format('woff'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.otf) format('truetype'), url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.eot),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Medium.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Metro Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.woff2) format('woff2'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.woff) format('woff'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.otf) format('truetype'), url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.eot),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Regular.eot?#iefix) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Metro Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.woff2) format('woff2'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.woff) format('woff'),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.otf) format('truetype'), url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.eot),
+        url(https://d2v80xjmx68n4w.cloudfront.net/assets/fonts/MetroSans/MetroSans-Light.eot?#iefix) format('embedded-opentype');
+}
+/* 1. header 시작 */
+body {
+    display: block;
+    margin: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(102, 102, 102, 1);
+    font-family: 'Metro Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    body>main {
+        min-height: 65vh;
+    }
+}
+
+.header {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+}
+
+@media (min-width: 1160px) {
+    .header {
+        padding: 0;
+        width: 90%;
+        height: 80px;
+    }
+}
+
+a {
+    background-color: transparent;
+}
+
+a {
+    color: rgba(22, 158, 230, 1);
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+.logo-kidsSookSook {
+    height: 44px;
+    margin-top: 8px;
+}
+
+@media (min-width: 1160px) {
+    .logo-kidsSookSook {
+        height: 74px;
+        margin-top: 7px
+    }
+}
+
+.cs {
+    height: 20px;
+    padding-left: 6px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1160px){
+    .cs {
+        height: 27px;
+        padding-left: 10px;
+        margin-top: 6px;
+        margin-bottom: 23px;
+    }
+}
+
+
+
+.nav-wrapper a {
+    border: 0;
+    color: rgba(22, 158, 230, 1);
+    display: none;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 20px 0 0;
+    width: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.user-info {
+    display: inline-block;
+}
+
+
+@media (min-width: 768px) {
+    .nav-wrapper a {
+        display: inline-block;
+    }
+}
+
+.dropdown-toggle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    text-align: initial;
+}
+
+.button,
+[role="button"] {
+    border: 1px solid #E4E5ED;
+    border-radius: 4px;
+    color: #9a9ba7;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 2.34;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-touch-callout: none;
+}
+
+@media (min-width: 768px) {
+
+    .button,
+    [role="button"] {
+        width: auto;
+    }
+}
+
+.user-info>[role="button"] {
+    border: 0;
+    color: rgba(22, 158, 230, 1);
+    min-width: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.user-avatar {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#user #user-name {
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.dropdown-toggle>* {
+    display: inline-block;
+}
+
+#user #user-name {
+    display: none;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    #user #user-name {
+        display: inline-block;
+    }
+}
+
+.dropdown-toggle::after {
+    color: rgb(136, 136, 136);
+    content: "  ";
+    display: inline-block;
+    font-family: entypo;
+    vertical-align: middle;
+}
+
+.dropdown-toggle::after {
+    color: inherit;
+}
+
+.button::after,
+[role="button"]::after {
+    color: rgba(255, 212, 0, 1);
+}
+
+.user-info .dropdown-toggle::after {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .user-info .dropdown-toggle::after {
+        display: inline-block;
+    }
+}
+
+.user-info>[role="button"]::after {
+    color: rgba(22, 158, 230, 1);
+    padding-right: 15px;
+}
+
+.dropdown-menu {
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    display: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    left: 0;
+    margin-top: 1px;
+    min-width: 170px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: left;
+    z-index: 1000;
+}
+
+.dropdown-menu-caret {
+    margin-top: 10px;
+}
+
+.dropdown-menu-end {
+    left: auto;
+    right: 0;
+}
+
+#user #user-dropdown {
+    background: #fff;
+    min-width: 200px;
+}
+
+@media (min-width: 768px) {
+    .nav-wrapper a {
+        display: inline-block;
+    }
+}
+
+.dropdown-menu [role=menuitem] {
+    color: #333;
+    cursor: pointer;
+    display: block;
+    padding: 7px 40px 7px 20px;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    line-height: inherit;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .nav-wrapper a {
+        display: inline-block;
+    }
+}
+
+[dir="ltr"] .dropdown-menu [role=menuitem] {
+    text-align: left;
+}
+
+/* 1. header 끝 */
+
+/* 2. main 시작 */
+
+/* main 밑에 검색창 */
+.container-divider {
+    border-top: 1px solid #FEEB83;
+    margin-bottom: 20px;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+@media (min-width: 1160px){
+    .container {
+        padding: 0;
+        width: 90%;
+    }
+}
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    min-height: 50px;
+    padding-bottom: 15px;
+}
+@media (min-width: 768px){
+    .sub-nav {
+        align-items: baseline;
+        flex-direction: row;
+    }
+}
+.breadcrumbs {
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-weight: 400;
+    color: #666666;
+}
+.breadcrumbs li a:visited {
+    color: #666666;
+}
+@media (min-width: 768px){
+    .breadcrumbs {
+        margin: 0;
+    }
+}
+.breadcrumbs li {
+    display: inline;
+    font-weight: 400;
+    font-size: 13px;
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
+}
+.custom-breadcrumbs a:link, a:hover, a:visited {
+    color: #666666;
+}
+.breadcrumbs li a:visited {
+    color: #666666;
+}
+.breadcrumbs li + li::before {
+    content: ">";
+    margin: 0 4px;
+}
+.search {
+    position: relative;
+}
+.search::before {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #777;
+    content: "\1F50D";
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+}
+[class^="icon-"]::before, [class*=" icon-"]::before, .icon, .search::before, .recent-activity-item-comment span::before, .article-vote::before, .attachments .attachment-item::before, .share a::before, .vote-up::before, .vote-down::before, .actions .dropdown-toggle::before, .collapsible-nav-list li[aria-selected="true"]::after, .collapsible-sidebar-title::after, .search-result-votes::before, .search-result-meta-count::before {
+    font-family: "copenhagen-icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    line-height: 1em;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+input {
+    line-height: normal;
+}
+input, textarea {
+    color: #3333;
+    font-size: 14px;
+}
+input {
+    font-weight: 300;
+    max-width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border .12s ease-in-out;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+.search input[type="search"] {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #666;
+    font-weight: 400;
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    width: 100%;
+}
+@media (min-width: 768px){
+    .sub-nav input[type="search"] {
+        min-width: 300px;
+    }
+}
+/* 2-1 main 밑에 검색창 끝 */
+
+/* 2-2 category */
+.category-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.category-content {
+    flex: 1;
+}
+@media (min-width: 1024px){
+    .category-content {
+        flex: 0 0 80%;
+    }
+}
+.page-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+@media (min-width: 768px){
+    .page-header {
+        align-items: baseline;
+        flex-direction: row;
+        margin: 0;
+    }
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+}
+h1 {
+    font-size: 32px;
+}
+.page-header h1 {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+}
+.section-tree {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (min-width: 768px){
+    .section-tree {
+        flex-direction: row;
+    }
+}
+
+
+.section {
+    margin-bottom: 40px;
+}
+@media (min-width: 768px){
+    .section {
+        margin-bottom: 60px;
+    }
+}
+.section-tree .section {
+    flex: initial;
+}
+@media (min-width: 768px){
+    .section-tree .section {
+        flex: 0 0 45%;
+    }
+}
+.see-all-sections-trigger {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-tree-title {
+    margin-bottom: 0;
+}
+.section-tree-title a {
+    color: rgba(102, 102, 102, 1);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.article-list-item {
+    font-size: 16px;
+    padding: 15px 0;
+}
+.article-list-item a {
+    color: rgba(102, 102, 102, 1);
+}
+.section-tree .see-all-articles {
+    display: block;
+    padding: 15px 0;
+}
+
+/* 2-2 category 끝 */
+
+/* 2. main 끝 */
+.see-all-sections-trigger[aria-hidden="true"] {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3. footer 시작 */
+.footer {
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.footer a {
+    color: #999;
+}
+
+.custom-breadcrumbs a:link,
+a:hover,
+a:visited {
+    color: #666666;
+}
+
+.footer-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.footer-mweb {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+}
+
+@media (min-width: 1160px) {
+    .footer-mweb {
+        display: none;
+    }
+}
+
+.footer-about {
+    max-width: 247px;
+    height: 132px;
+    font-family: NotoSansCJKkr;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69;
+    letter-spacing: -0.3px;
+    color: #666666;
+}
+
+@media (min-width: 1160px) {
+    .footer-inner {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        font-size: 13px;
+    }
+
+}
+
+.footer-language-selector {
+    color: #999;
+    display: inline-block;
+    font-weight: 300;
+}
+/* footer 끝 */

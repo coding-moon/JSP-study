@@ -1,0 +1,84 @@
+/* 3. footer 시작 */
+.footer {
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.footer a {
+    color: #999;
+}
+
+
+
+.footer-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.custom-breadcrumbs {
+    font-weight: 400;
+    font-size: 13px;
+    color: #666666;
+}
+
+
+.footer-mweb {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+}
+
+@media (min-width: 1160px) {
+    .footer-mweb {
+        display: none;
+    }
+}
+
+.footer-about {
+    max-width: 247px;
+    height: 132px;
+    font-family: NotoSansCJKkr;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69;
+    letter-spacing: -0.3px;
+    color: #666666;
+}
+
+@media (min-width: 1160px) {
+    .footer-inner {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        font-size: 13px;
+    }
+
+}
+
+.footer-language-selector {
+    color: #999;
+    display: inline-block;
+    font-weight: 300;
+}
+
+
+
+.footer-language-selector {
+    color: #999;
+    display: inline-block;
+    font-weight: 300;
+}
+
+
+/* footer 끝 */
